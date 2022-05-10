@@ -1,13 +1,5 @@
-const axios = require("axios");
-
-function getSingleTodoTitle() {
-  let url = "https://jsonplaceholder.typicode.com/todos/1";
-  return axios
-    .get(url)
-    .then(res => res.data.title.toUpperCase())
-    .catch(err => err.response);
+function giveMePromise() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => resolve("I am done"), 2000)
+  })
 }
-
-getSingleTodoTitle();
-
-module.exports = getSingleTodoTitle;

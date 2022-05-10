@@ -8,8 +8,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "jest": "^24.9.0"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.9"
+  }
 }
